@@ -29,3 +29,17 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.search-bar {
+    width: 100%;
+    padding: 10px 40px; /* Ruang tambahan untuk teks dan gambar */
+    border: none;
+    border-radius: 5px;
+    background: url('search-icon.png') no-repeat 10px center; /* Ganti dengan URL gambar ikon pencarian */
+    background-size: 20px; /* Ukuran ikon */
+    font-size: 16px;
+    color: #333;
+}
+
+.search-bar::placeholder {
+    color: #888; /* Warna teks placeholder */
+
