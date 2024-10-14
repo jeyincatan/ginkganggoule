@@ -8,16 +8,41 @@
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5e/Emoji_1f60a.svg" type="image/svg+xml">
 
     <script type="text/javascript">
+        // Live Chat Initialization
         window.__lc = window.__lc || {};
         window.__lc.license = 11986977;
         (function (n, t, c) {
-            function i(n) { return e._h ? e._h.apply(null, n) : e._q.push(n) } var e = {
-                _q: [], _h: null, _v: "2.0", on: function () { i(["on", c.call(arguments)]) }, once: function () { i(["once", c.call(arguments)]) }, off: function () { i(["off", c.call(arguments)]) }, get: function () { if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load."); return i(["get", c.call(arguments)]) }, call: function () { i(["call", c.call(arguments)]) }, init: function () {
+            function i(n) { return e._h ? e._h.apply(null, n) : e._q.push(n) }
+            var e = {
+                _q: [],
+                _h: null,
+                _v: "2.0",
+                on: function () { i(["on", c.call(arguments)]) },
+                once: function () { i(["once", c.call(arguments)]) },
+                off: function () { i(["off", c.call(arguments)]) },
+                get: function () { if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load."); return i(["get", c.call(arguments)]) },
+                call: function () { i(["call", c.call(arguments)]) },
+                init: function () {
                     var n = t.createElement("script"); n.async = !0, n.type = "text/javascript",
                         n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n)
                 }
-            }; !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e
+            };
+            !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e
         })(window, document, [].slice);
+
+        // Function to filter games
+        function filterGames() {
+            const searchInput = document.querySelector('.search-bar').value.toLowerCase();
+            const gameItems = document.querySelectorAll('.game-item');
+            gameItems.forEach(item => {
+                const gameName = item.querySelector('h3').textContent.toLowerCase();
+                if (gameName.includes(searchInput)) {
+                    item.style.display = 'block'; // Show the game if it matches
+                } else {
+                    item.style.display = 'none'; // Hide if it doesn't match
+                }
+            });
+        }
     </script>
 
     <link rel="stylesheet" href="styles.css">
@@ -185,7 +210,7 @@
                 <div class="game-item">
                     <a href="https://mandiri888opa.com/slot/pragmaticplay" target="_blank">
                         <img src="https://imgur.com/RwoQnGI.jpg" alt="Sweet Bonanza">
-                     </a>
+                    </a>
                     <h3>Sweet Bonanza</h3>
                     <p>Slot permen manis dengan pengganda besar!</p>
                 </div>
@@ -211,7 +236,7 @@
 
         <section>
             <h2>Cari Game Favoritmu</h2>
-            <input type="text" class="search-bar" placeholder="Cari game slot...">
+            <input type="text" class="search-bar" placeholder="Cari game slot..." onkeyup="filterGames()">
         </section>
 
         <section>
