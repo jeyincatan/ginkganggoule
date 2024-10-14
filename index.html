@@ -6,46 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mandiri888 Slot Site - Menang Besar!</title>
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5e/Emoji_1f60a.svg" type="image/svg+xml">
-
-    <script type="text/javascript">
-        // Live Chat Initialization
-        window.__lc = window.__lc || {};
-        window.__lc.license = 11986977;
-        (function (n, t, c) {
-            function i(n) { return e._h ? e._h.apply(null, n) : e._q.push(n) }
-            var e = {
-                _q: [],
-                _h: null,
-                _v: "2.0",
-                on: function () { i(["on", c.call(arguments)]) },
-                once: function () { i(["once", c.call(arguments)]) },
-                off: function () { i(["off", c.call(arguments)]) },
-                get: function () { if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load."); return i(["get", c.call(arguments)]) },
-                call: function () { i(["call", c.call(arguments)]) },
-                init: function () {
-                    var n = t.createElement("script"); n.async = !0, n.type = "text/javascript",
-                        n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n)
-                }
-            };
-            !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e
-        })(window, document, [].slice);
-
-        // Function to filter games
-        function filterGames() {
-            const searchInput = document.querySelector('.search-bar').value.toLowerCase();
-            const gameItems = document.querySelectorAll('.game-item');
-            gameItems.forEach(item => {
-                const gameName = item.querySelector('h3').textContent.toLowerCase();
-                if (gameName.includes(searchInput)) {
-                    item.style.display = 'block'; // Show the game if it matches
-                } else {
-                    item.style.display = 'none'; // Hide if it doesn't match
-                }
-            });
-        }
-    </script>
-
-    <link rel="stylesheet" href="styles.css">
+    
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -123,32 +84,37 @@
 
         .game-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsif */
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive */
             gap: 15px;
         }
 
         .game-item {
-            background-color: #343434;
-            padding: 10px;
+            position: relative;
             border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
+            overflow: hidden; /* Ensure the overlay does not overflow */
         }
 
-        .game-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(255, 94, 58, 0.7);
+        .image-overlay {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://example.com/your-image.png'); /* Use your uploaded image URL */
+            background-size: cover; /* Cover the entire area */
+            background-position: center; /* Center the image */
+            padding: 10px; /* Add padding if necessary */
+            border-radius: 10px; /* Keep the corners rounded */
+            display: flex; /* Use flex to center text */
+            flex-direction: column; /* Arrange items in column */
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+            color: white; /* Change text color for visibility */
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+            text-align: center; /* Center align text */
+            height: 200px; /* Set a fixed height for consistency */
         }
 
         .game-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .game-item h3 {
-            font-size: 1.2em;
-            margin: 10px 0 5px 0;
+            display: none; /* Hide the image if you want to use the background only */
         }
 
         footer {
@@ -171,7 +137,7 @@
             color: #ff005c;
         }
 
-        /* Responsif untuk perangkat mobile */
+        /* Responsive for mobile devices */
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.5em;
@@ -199,57 +165,134 @@
         <section>
             <h2>Slot Games Terfavorit</h2>
             <p>Temukan RTP Slot Terbaru dan klaim kemenangan besar! Mainkan game slot favorit dengan hadiah melimpah.</p>
-            <div class="game-grid">
-                <div class="game-item">
-                    <a href="https://mandiri888opa.com/slot/pragmaticplay" target="_blank">
-                        <img src="https://imgur.com/Fxkyd1b.jpg" alt="Gates of Olympus">
+
+            <div class="game-grid" id="game-list">
+                <!-- Updated game list from Pragmatic Play -->
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Gates%20of%20Olympus">
+                        <div class="image-overlay">
+                            <h3>Gates of Olympus (Pragmatic)</h3>
+                            <p>Menangkan jackpot besar di dunia dewa Yunani.</p>
+                        </div>
                     </a>
-                    <h3>Gates of Olympus</h3>
-                    <p>Menangkan jackpot besar di dunia dewa Yunani.</p>
                 </div>
-                <div class="game-item">
-                    <a href="https://mandiri888opa.com/slot/pragmaticplay" target="_blank">
-                        <img src="https://imgur.com/RwoQnGI.jpg" alt="Sweet Bonanza">
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Sweet%20Bonanza">
+                        <div class="image-overlay">
+                            <h3>Sweet Bonanza (Pragmatic)</h3>
+                            <p>Slot permennya manis dengan pengganda besar!</p>
+                        </div>
                     </a>
-                    <h3>Sweet Bonanza</h3>
-                    <p>Slot permen manis dengan pengganda besar!</p>
                 </div>
-                <div class="game-item">
-                    <a href="https://mandiri888opa.com/slot/pragmaticplay" target="_blank">
-                        <img src="https://imgur.com/AU8dqqp.jpg" alt="Starlight Princess">
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Starlight%20Princess">
+                        <div class="image-overlay">
+                            <h3>Starlight Princess (Pragmatic)</h3>
+                            <p>Game slot anime dengan fitur free spin yang memukau.</p>
+                        </div>
                     </a>
-                    <h3>Starlight Princess</h3>
-                    <p>Game slot anime dengan fitur free spin yang memukau.</p>
                 </div>
-                <div class="game-item">
-                    <img src="https://example.com/aztec-gems.jpg" alt="Aztec Gems">
-                    <h3>Aztec Gems</h3>
-                    <p>Slot klasik dengan kemenangan cepat dan mudah.</p>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Wild%20West%20Gold">
+                        <div class="image-overlay">
+                            <h3>Wild West Gold (Pragmatic)</h3>
+                            <p>Slot yang mengajak Anda ke era Wild West!</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="game-item">
-                    <img src="https://example.com/dog-house-megaways.jpg" alt="The Dog House Megaways">
-                    <h3>The Dog House Megaways</h3>
-                    <p>Rasakan ribuan cara untuk menang di slot ini!</p>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=The%20Dog%20House">
+                        <div class="image-overlay">
+                            <h3>The Dog House (Pragmatic)</h3>
+                            <p>Slot yang penuh dengan anjing lucu dan hadiah besar!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Wolf%20Gold">
+                        <div class="image-overlay">
+                            <h3>Wolf Gold (Pragmatic)</h3>
+                            <p>Menangkan jackpot dengan tema hutan dan serigala!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Great%20Rhino">
+                        <div class="image-overlay">
+                            <h3>Great Rhino (Pragmatic)</h3>
+                            <p>Slot yang membawa Anda ke safari Afrika!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=John%20Hunter%20and%20the%20Tomb%20of%20the%20Scarabs">
+                        <div class="image-overlay">
+                            <h3>John Hunter and the Tomb of the Scarabs (Pragmatic)</h3>
+                            <p>Ikuti petualangan John Hunter di Mesir kuno!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Madame%20Destiny">
+                        <div class="image-overlay">
+                            <h3>Madame Destiny (Pragmatic)</h3>
+                            <p>Ramal masa depan Anda dengan slot penuh misteri ini!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Pirates%20Happiness">
+                        <div class="image-overlay">
+                            <h3>Pirates Happiness (Pragmatic)</h3>
+                            <p>Bergabunglah dengan bajak laut untuk mendapatkan harta karun!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Fruit%20Party">
+                        <div class="image-overlay">
+                            <h3>Fruit Party (Pragmatic)</h3>
+                            <p>Slot penuh warna dengan pengganda luar biasa!</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>Cari Game Favoritmu</h2>
-            <input type="text" class="search-bar" placeholder="Cari game slot..." onkeyup="filterGames()">
+            <h2>Cari Game Berdasarkan Provider</h2>
+            <input type="text" id="search-bar" class="search-bar" placeholder="Cari game atau provider..." onkeyup="searchGames()">
         </section>
 
         <section>
             <h2>Hubungi Kami</h2>
-            <p>Telegram: <a href="https://t.me/Mandiri888?utm_medium=social&utm_source=heylink.me&utm_medium=social&utm_source=heylink.me">Telegram Mandiri888</a></p>
-            <p>WhatsApp: <a href="https://api.whatsapp.com/send/?phone=%2B6281388617464&text&type=phone_number&app_absent=0&utm_source=heylink.me&utm_medium=social&utm_source=heylink.me">WA Mandiri888</a></p>
-            <p>Live Chat: <a href="https://secure.livechatinc.com/customer/action/open_chat?license_id=11986977&utm_medium=social&utm_source=heylink.me">Live Chat Mandiri888</a></p>
+            <p>Telegram: <a href="https://t.me/Mandiri888">Telegram Mandiri888</a></p>
+            <p>WhatsApp: <a href="https://api.whatsapp.com/send/?phone=%2B6281388617464&text">WA Mandiri888</a></p>
+            <p>Live Chat: <a href="https://secure.livechatinc.com/customer/action/open_chat?license_id=11986977">Live Chat Mandiri888</a></p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Mandiri888 Slot Site | Raih Kemenangan Besar Sekarang!</p>
     </footer>
-</body>
 
+    <script>
+        function searchGames() {
+            var input = document.getElementById('search-bar').value.toLowerCase();
+            var gameItems = document.querySelectorAll('.game-item');
+
+            gameItems.forEach(function (item) {
+                var gameTitle = item.querySelector('h3').innerText.toLowerCase();
+                var provider = item.getAttribute('data-provider').toLowerCase();
+
+                // Cek apakah input pencarian cocok dengan nama game atau provider
+                if (gameTitle.includes(input) || provider.includes(input)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
 </html>
