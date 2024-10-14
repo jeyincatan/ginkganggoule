@@ -8,84 +8,60 @@
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5e/Emoji_1f60a.svg" type="image/svg+xml">
     
     <style>
+        /* CSS for your site */
         body {
             font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: #fff;
+            background-color: #222;
+            color: white;
             margin: 0;
-            padding: 0;
+            padding: 20px;
         }
 
         header {
-            background-color: #333;
-            padding: 20px;
             text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #ffcc00;
-        }
-
-        .cta-button {
-            background-color: #ffcc00;
-            color: #000;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        h2 {
-            color: #ffcc00;
+            margin-bottom: 20px;
         }
 
         .game-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 10px;
-            padding: 20px;
         }
 
         .game-item {
             position: relative;
             overflow: hidden;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #333;
+            transition: transform 0.3s;
         }
 
-        .game-item a {
-            display: block;
-            text-decoration: none;
-            color: white;
-            height: 100%;
+        .game-item:hover {
+            transform: scale(1.05);
         }
 
         .image-overlay {
             background-size: cover;
             background-position: center;
-            height: 200px;
+            height: 150px;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
+            align-items: flex-end;
             padding: 10px;
-            transition: transform 0.3s;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
         }
 
-        .image-overlay h3, .image-overlay p {
+        h3, p {
             margin: 0;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            padding: 5px;
         }
 
-        .image-overlay:hover {
-            transform: scale(1.05);
-        }
-
-        footer {
-            background-color: #333;
-            text-align: center;
+        .search-bar {
+            margin-bottom: 20px;
             padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
         }
     </style>
 </head>
@@ -106,7 +82,7 @@
                     <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Sweet%20Bonanza">
                         <div class="image-overlay" style="background-image: url('https://imgur.com/RwoQnGI.jpg');">
                             <h3>Sweet Bonanza (Pragmatic)</h3>
-                            <p>Slot permennya manis dengan pengganda besar!</p>
+                            <p>Slot penuh dengan pengganda besar!</p>
                         </div>
                     </a>
                 </div>
@@ -195,39 +171,9 @@
 
         <section>
             <h2>Cari Game Berdasarkan Provider</h2>
-            <input type="text" id="search-bar" class="search-bar" placeholder="Cari game atau provider..." onkeyup="searchGames()">
-        </section>
-
-        <section>
-            <h2>Hubungi Kami</h2>
-            <p>Telegram: <a href="https://t.me/Mandiri888">Telegram Mandiri888</a></p>
-            <p>WhatsApp: <a href="https://api.whatsapp.com/send/?phone=%2B6281388617464&text">WA Mandiri888</a></p>
-            <p>Live Chat: <a href="https://secure.livechatinc.com/customer/action/open_chat?license_id=11986977">Live Chat Mandiri888</a></p>
+            <input type="text" class="search-bar" placeholder="Cari game atau provider...">
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Mandiri888 Slot Site | Raih Kemenangan Besar Sekarang!</p>
-    </footer>
-
-    <script>
-        function searchGames() {
-            var input = document.getElementById('search-bar').value.toLowerCase();
-            var gameItems = document.querySelectorAll('.game-item');
-
-            gameItems.forEach(function (item) {
-                var gameTitle = item.querySelector('h3').innerText.toLowerCase();
-                var provider = item.getAttribute('data-provider').toLowerCase();
-
-                // Cek apakah input pencarian cocok dengan nama game atau provider
-                if (gameTitle.includes(input) || provider.includes(input)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
