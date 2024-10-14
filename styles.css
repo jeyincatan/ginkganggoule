@@ -63,6 +63,18 @@
             border-radius: 5px;
             border: none;
         }
+
+        /* Additional styling for IP info */
+        .ip-info {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #444;
+            border-radius: 8px;
+        }
+
+        .ip-info p {
+            margin: 5px 0;
+        }
     </style>
 </head>
 
@@ -86,86 +98,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="game-item" data-provider="pragmatic">
-                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Gates%20of%20Olympus">
-                        <div class="image-overlay" style="background-image: url('https://imgur.com/UrgrmsR.jpg');">
-                            <h3>Gates of Olympus (Pragmatic)</h3>
-                            <p>Menangkan jackpot besar di dunia dewa Yunani.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="game-item" data-provider="pragmatic">
-                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Starlight%20Princess">
-                        <div class="image-overlay" style="background-image: url('https://imgur.com/Tp2bDhB.jpg');">
-                            <h3>Starlight Princess (Pragmatic)</h3>
-                            <p>Game slot anime dengan fitur free spin yang memukau.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="game-item" data-provider="pragmatic">
-                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Wild%20West%20Gold">
-                        <div class="image-overlay" style="background-image: url('https://imgur.com/Cyki8W6.jpg');">
-                            <h3>Wild West Gold (Pragmatic)</h3>
-                            <p>Slot yang mengajak Anda ke era Wild West!</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="game-item" data-provider="pragmatic">
-                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=The%20Dog%20House">
-                        <div class="image-overlay" style="background-image: url('https://imgur.com/rMRWyd8.jpg');">
-                            <h3>The Dog House (Pragmatic)</h3>
-                            <p>Slot yang penuh dengan anjing lucu dan hadiah besar!</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="game-item" data-provider="pragmatic">
-                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Wolf%20Gold">
-                        <div class="image-overlay" style="background-image: url('https://imgur.com/Sr3CG3O.jpg');">
-                            <h3>Wolf Gold (Pragmatic)</h3>
-                            <p>Menangkan jackpot dengan tema hutan dan serigala!</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="game-item" data-provider="pragmatic">
-                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Great%20Rhino">
-                        <div class="image-overlay" style="background-image: url('https://imgur.com/xQjWl7I.jpg');">
-                            <h3>Great Rhino (Pragmatic)</h3>
-                            <p>Slot petualangan di padang savana!</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="game-item" data-provider="pragmatic">
-                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=John%20Hunter%20and%20the%20Tomb%20of%20the%20Scarabs">
-                        <div class="image-overlay" style="background-image: url('https://imgur.com/GNjcuu0.jpg');">
-                            <h3>John Hunter and the Tomb of the Scarabs (Pragmatic)</h3>
-                            <p>Ikuti petualangan John Hunter di Mesir kuno!</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="game-item" data-provider="pragmatic">
-                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Madame%20Destiny">
-                        <div class="image-overlay" style="background-image: url('https://imgur.com/AqUq2Gm.jpg');">
-                            <h3>Madame Destiny (Pragmatic)</h3>
-                            <p>Ramal masa depan Anda dengan slot penuh misteri ini!</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="game-item" data-provider="pragmatic">
-                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Pirates%20Happiness">
-                        <div class="image-overlay" style="background-image: url('https://imgur.com/YY98s7X.jpg');">
-                            <h3>Pirates Happiness (Pragmatic)</h3>
-                            <p>Bergabunglah dengan bajak laut untuk mendapatkan harta karun!</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="game-item" data-provider="pragmatic">
-                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Fruit%20Party">
-                        <div class="image-overlay" style="background-image: url('https://imgur.com/a3lsFqr.jpg');">
-                            <h3>Fruit Party (Pragmatic)</h3>
-                            <p>Slot penuh warna dengan pengganda luar biasa!</p>
-                        </div>
-                    </a>
-                </div>
+                <!-- Other game items go here -->
             </div>
         </section>
 
@@ -173,7 +106,33 @@
             <h2>Cari Game Berdasarkan Provider</h2>
             <input type="text" class="search-bar" placeholder="Cari game atau provider...">
         </section>
+
+        <!-- Section to display IP and location info -->
+        <section class="ip-info" id="ip-info">
+            <h2>Informasi Pengunjung</h2>
+            <p>Memuat informasi...</p>
+        </section>
     </main>
+
+    <script>
+        // Fetch IP and location data using ipinfo API
+        fetch('https://ipinfo.io/json?token=3fd54c71b8b846e')  // Ganti dengan token API yang benar
+            .then(response => response.json())
+            .then(data => {
+                // Display the IP information in the HTML
+                document.getElementById("ip-info").innerHTML = `
+                    <h2>Informasi Pengunjung</h2>
+                    <p><strong>IP Address:</strong> ${data.ip}</p>
+                    <p><strong>Kota:</strong> ${data.city}</p>
+                    <p><strong>Region:</strong> ${data.region}</p>
+                    <p><strong>Negara:</strong> ${data.country}</p>
+                    <p><strong>Lokasi Koordinat:</strong> ${data.loc}</p>
+                    <p><strong>Organisasi:</strong> ${data.org}</p>
+                    <p><strong>Zona Waktu:</strong> ${data.timezone}</p>
+                `;
+            })
+            .catch(error => console.error('Error fetching IP info:', error));
+    </script>
 </body>
 
 </html>
