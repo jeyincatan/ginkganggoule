@@ -86,5 +86,28 @@
         }
     </script>
 </body>
+.image-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    border-radius: 10px; /* Keep the corners rounded */
+    overflow: hidden; /* Hide anything that overflows the border */
+    padding: 10px; /* Add padding if necessary */
+}
 
+.image-overlay img {
+    display: none; /* Hide the image if you want to use the background only */
+}
+
+.image-overlay h3, .image-overlay p {
+    position: absolute; /* Position text absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact center */
+    color: white; /* Change text color for visibility */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+    text-align: center; /* Center align text */
+</body>
 </html>
