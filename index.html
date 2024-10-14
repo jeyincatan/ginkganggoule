@@ -1,29 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mandiri888 Slot Site</title>
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5e/Emoji_1f60a.svg" type="image/svg+xml"> <!-- Menggunakan favicon dari link -->
+    <title>Mandiri888 Slot Site - Menang Besar!</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5e/Emoji_1f60a.svg" type="image/svg+xml">
+
+    <script type="text/javascript">
+        window.__lc = window.__lc || {};
+        window.__lc.license = 11986977;
+        (function (n, t, c) {
+            function i(n) { return e._h ? e._h.apply(null, n) : e._q.push(n) } var e = {
+                _q: [], _h: null, _v: "2.0", on: function () { i(["on", c.call(arguments)]) }, once: function () { i(["once", c.call(arguments)]) }, off: function () { i(["off", c.call(arguments)]) }, get: function () { if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load."); return i(["get", c.call(arguments)]) }, call: function () { i(["call", c.call(arguments)]) }, init: function () {
+                    var n = t.createElement("script"); n.async = !0, n.type = "text/javascript",
+                        n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n)
+                }
+            }; !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e
+        })(window, document, [].slice);
+    </script>
+
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #1e1e1e;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e, #343434);
             color: #fff;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
 
         header {
             background: linear-gradient(90deg, #ff005c, #ff5e3a);
             padding: 20px;
             text-align: center;
+            position: relative;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 10px #ff005c; }
+            100% { box-shadow: 0 0 20px #ff5e3a; }
         }
 
         h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff5e3a;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        .cta-button:hover {
+            background-color: #ff005c;
+            cursor: pointer;
         }
 
         main {
@@ -33,75 +77,154 @@
         section {
             margin: 20px 0;
             padding: 20px;
-            border: 1px solid #ff005c;
             border-radius: 10px;
             background-color: #2c2c2c;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            color: #ff5e3a;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsif */
+            gap: 15px;
+        }
+
+        .game-item {
+            background-color: #343434;
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .game-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 94, 58, 0.7);
+        }
+
+        .game-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .game-item h3 {
+            font-size: 1.2em;
+            margin: 10px 0 5px 0;
         }
 
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background: #ff005c;
-            position: relative;
-            bottom: 0;
             width: 100%;
+            color: #fff;
+            font-size: 1em;
         }
 
         a {
             color: #ff5e3a;
             text-decoration: none;
+            transition: color 0.3s;
         }
 
         a:hover {
             text-decoration: underline;
+            color: #ff005c;
         }
 
-        .slot-machine {
-            background-image: url('slot-machine.jpg'); /* Ganti dengan URL gambar mesin slot */
-            background-size: cover;
-            height: 300px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
+        /* Responsif untuk perangkat mobile */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
 
-        .search-bar {
-            width: 100%;
-            padding: 10px 40px; /* Ruang tambahan untuk teks dan gambar */
-            border: none;
-            border-radius: 5px;
-            background: url('search-icon.png') no-repeat 10px center; /* Ganti dengan URL gambar ikon pencarian */
-            background-size: 20px; /* Ukuran ikon */
-            font-size: 16px;
-            color: #333;
-        }
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
 
-        .search-bar::placeholder {
-            color: #888; /* Warna teks placeholder */
+            section {
+                padding: 15px;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Welcome to Mandiri888 Slot Site!</h1>
-        <p>Try your luck with our exciting slot games!</p>
+        <h1>Mandiri888 Slot</h1>
+        <a href="#play" class="cta-button">Bermain & Menang Besar!</a>
     </header>
+
     <main>
         <section>
-            <div class="slot-machine"></div> <!-- Gambar Mesin Slot -->
-            <h2>About This Site</h2>
-            <p>This site is created to provide you with the best online slot experience. Join us and start winning!</p>
+            <h2>Slot Games Terfavorit</h2>
+            <p>Temukan RTP Slot Terbaru dan klaim kemenangan besar! Mainkan game slot favorit dengan hadiah melimpah.</p>
+            <div class="game-grid">
+                <div class="game-item">
+                    <a href="https://mandiri888opa.com/slot/pragmaticplay" target="_blank">
+                        <img src="https://imgur.com/Fxkyd1b.jpg" alt="Gates of Olympus">
+                    </a>
+                    <h3>Gates of Olympus</h3>
+                    <p>Menangkan jackpot besar di dunia dewa Yunani.</p>
+                </div>
+                <div class="game-item">
+                    <a href="https://mandiri888opa.com/slot/pragmaticplay" target="_blank">
+                        <img src="https://imgur.com/RwoQnGI.jpg" alt="Sweet Bonanza">
+                     </a>
+                    <h3>Sweet Bonanza</h3>
+                    <p>Slot permen manis dengan pengganda besar!</p>
+                </div>
+                <div class="game-item">
+                    <a href="https://mandiri888opa.com/slot/pragmaticplay" target="_blank">
+                        <img src="https://imgur.com/AU8dqqp.jpg" alt="Starlight Princess">
+                    </a>
+                    <h3>Starlight Princess</h3>
+                    <p>Game slot anime dengan fitur free spin yang memukau.</p>
+                </div>
+                <div class="game-item">
+                    <img src="https://example.com/aztec-gems.jpg" alt="Aztec Gems">
+                    <h3>Aztec Gems</h3>
+                    <p>Slot klasik dengan kemenangan cepat dan mudah.</p>
+                </div>
+                <div class="game-item">
+                    <img src="https://example.com/dog-house-megaways.jpg" alt="The Dog House Megaways">
+                    <h3>The Dog House Megaways</h3>
+                    <p>Rasakan ribuan cara untuk menang di slot ini!</p>
+                </div>
+            </div>
         </section>
+
         <section>
-            <h2>Search Games</h2>
-            <input type="text" class="search-bar" placeholder="Search for slot games...">
+            <h2>Cari Game Favoritmu</h2>
+            <input type="text" class="search-bar" placeholder="Cari game slot...">
         </section>
+
         <section>
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <h2>Hubungi Kami</h2>
+            <p>Telegram: <a href="https://t.me/Mandiri888?utm_medium=social&utm_source=heylink.me&utm_medium=social&utm_source=heylink.me">Telegram Mandiri888</a></p>
+            <p>WhatsApp: <a href="https://api.whatsapp.com/send/?phone=%2B6281388617464&text&type=phone_number&app_absent=0&utm_source=heylink.me&utm_medium=social&utm_source=heylink.me">WA Mandiri888</a></p>
+            <p>Live Chat: <a href="https://secure.livechatinc.com/customer/action/open_chat?license_id=11986977&utm_medium=social&utm_source=heylink.me">Live Chat Mandiri888</a></p>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Mandiri888 Slot Site</p>
+        <p>&copy; 2024 Mandiri888 Slot Site | Raih Kemenangan Besar Sekarang!</p>
     </footer>
 </body>
+
 </html>
