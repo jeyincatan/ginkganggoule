@@ -98,7 +98,6 @@
             position: relative;
             width: 100%;
             height: 100%;
-            background-image: url('https://example.com/your-image.png'); /* Use your uploaded image URL */
             background-size: cover; /* Cover the entire area */
             background-position: center; /* Center the image */
             padding: 10px; /* Add padding if necessary */
@@ -167,31 +166,95 @@
             <p>Temukan RTP Slot Terbaru dan klaim kemenangan besar! Mainkan game slot favorit dengan hadiah melimpah.</p>
 
             <div class="game-grid" id="game-list">
+                <!-- Updated game list with correct images -->
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Sweet%20Bonanza">
+                        <div class="image-overlay" style="background-image: url('https://imgur.com/RwoQnGI.jpg');">
+                            <h3>Sweet Bonanza (Pragmatic)</h3>
+                            <p>Slot permennya manis dengan pengganda besar!</p>
+                        </div>
+                    </a>
+                </div>
                 <div class="game-item" data-provider="pragmatic">
                     <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Gates%20of%20Olympus">
-                        <div class="image-overlay">
+                        <div class="image-overlay" style="background-image: url('https://imgur.com/RwoQnGI.jpg');">
                             <h3>Gates of Olympus (Pragmatic)</h3>
                             <p>Menangkan jackpot besar di dunia dewa Yunani.</p>
                         </div>
                     </a>
                 </div>
-                <div class="game-item" data-provider="pgsoft">
-                    <a href="https://example.com/pg-soft-game">
-                        <div class="image-overlay">
-                            <h3>PG Soft Game</h3>
-                            <p>Game dari provider PG Soft dengan peluang besar menang.</p>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Starlight%20Princess">
+                        <div class="image-overlay" style="background-image: url('https://imgur.com/RwoQnGI.jpg');">
+                            <h3>Starlight Princess (Pragmatic)</h3>
+                            <p>Game slot anime dengan fitur free spin yang memukau.</p>
                         </div>
                     </a>
                 </div>
-                <div class="game-item" data-provider="spadegaming">
-                    <a href="https://example.com/spade-gaming">
-                        <div class="image-overlay">
-                            <h3>Spade Gaming Game</h3>
-                            <p>Menangkan jackpot besar dengan Spade Gaming.</p>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Wild%20West%20Gold">
+                        <div class="image-overlay" style="background-image: url('https://imgur.com/RwoQnGI.jpg');">
+                            <h3>Wild West Gold (Pragmatic)</h3>
+                            <p>Slot yang mengajak Anda ke era Wild West!</p>
                         </div>
                     </a>
                 </div>
-                <!-- Tambahkan game dari provider lain di sini -->
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=The%20Dog%20House">
+                        <div class="image-overlay" style="background-image: url('https://imgur.com/RwoQnGI.jpg');">
+                            <h3>The Dog House (Pragmatic)</h3>
+                            <p>Slot yang penuh dengan anjing lucu dan hadiah besar!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Wolf%20Gold">
+                        <div class="image-overlay" style="background-image: url('https://imgur.com/RwoQnGI.jpg');">
+                            <h3>Wolf Gold (Pragmatic)</h3>
+                            <p>Menangkan jackpot dengan tema hutan dan serigala!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Great%20Rhino">
+                        <div class="image-overlay" style="background-image: url('https://imgur.com/RwoQnGI.jpg');">
+                            <h3>Great Rhino (Pragmatic)</h3>
+                            <p>Slot petualangan di padang savana!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=John%20Hunter%20and%20the%20Tomb%20of%20the%20Scarabs">
+                        <div class="image-overlay" style="background-image: url('https://imgur.com/RwoQnGI.jpg');">
+                            <h3>John Hunter and the Tomb of the Scarabs (Pragmatic)</h3>
+                            <p>Ikuti petualangan John Hunter di Mesir kuno!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Madame%20Destiny">
+                        <div class="image-overlay" style="background-image: url('https://imgur.com/RwoQnGI.jpg');">
+                            <h3>Madame Destiny (Pragmatic)</h3>
+                            <p>Ramal masa depan Anda dengan slot penuh misteri ini!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Pirates%20Happiness">
+                        <div class="image-overlay" style="background-image: url('https://imgur.com/RwoQnGI.jpg');">
+                            <h3>Pirates Happiness (Pragmatic)</h3>
+                            <p>Bergabunglah dengan bajak laut untuk mendapatkan harta karun!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-item" data-provider="pragmatic">
+                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Fruit%20Party">
+                        <div class="image-overlay" style="background-image: url('https://imgur.com/RwoQnGI.jpg');">
+                            <h3>Fruit Party (Pragmatic)</h3>
+                            <p>Slot penuh warna dengan pengganda luar biasa!</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
 
