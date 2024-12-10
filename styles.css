@@ -105,6 +105,18 @@ nav a:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manga-info .read-btn:before {
+    content: "";
+    background-image: url("https://i.imgur.com/4gsKc0U.png"); /* Imgur icon URL */
+    background-size: cover;
+    width: 20px; /* Set width of the icon */
+    height: 20px; /* Set height of the icon */
+    margin-right: 10px; /* Space between icon and text */
 }
 
 .manga-info .read-btn:hover {
