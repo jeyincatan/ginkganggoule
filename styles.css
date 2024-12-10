@@ -1,138 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mandiri888 Slot Site - Menang Besar!</title>
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5e/Emoji_1f60a.svg" type="image/svg+xml">
-    
-    <style>
-        /* CSS for your site */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #222;
-            color: white;
-            margin: 0;
-            padding: 20px;
-        }
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+    color: #fff;
+    overflow-x: hidden;
+}
 
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+/* Container for the entire layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-        .game-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 10px;
-        }
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+}
 
-        .game-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            background-color: #333;
-            transition: transform 0.3s;
-        }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
 
-        .game-item:hover {
-            transform: scale(1.05);
-        }
+nav a:hover {
+    color: #ff5722; /* Accent color on hover */
+}
 
-        .image-overlay {
-            background-size: cover;
-            background-position: center;
-            height: 150px;
-            display: flex;
-            align-items: flex-end;
-            padding: 10px;
-            color: white;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-        }
+/* Manga Slider */
+.manga-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+}
 
-        h3, p {
-            margin: 0;
-            padding: 5px;
-        }
+.manga-item {
+    background-color: #333;
+    border-radius: 10px;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
 
-        .search-bar {
-            margin-bottom: 20px;
-            padding: 10px;
-            width: 100%;
-            border-radius: 5px;
-            border: none;
-        }
+.manga-item:hover {
+    transform: scale(1.05);
+}
 
-        /* Additional styling for IP info */
-        .ip-info {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #444;
-            border-radius: 8px;
-        }
+.manga-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
 
-        .ip-info p {
-            margin: 5px 0;
-        }
-    </style>
-</head>
+.manga-item:hover img {
+    opacity: 0.8;
+}
 
-<body>
-    <header>
-        <h1>Mandiri888 Slot</h1>
-        <a href="#play" class="cta-button">Bermain & Menang Besar!</a>
-    </header>
+.manga-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
 
-    <main>
-        <section>
-            <h2>Slot Games Terfavorit</h2>
-            <p>Temukan RTP Slot Terbaru dan klaim kemenangan besar! Mainkan game slot favorit dengan hadiah melimpah.</p>
+.manga-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
-            <div class="game-grid" id="game-list">
-                <div class="game-item" data-provider="pragmatic">
-                    <a href="https://55ec43f7.megpustlfo.net/gs2c/html5Game.do?jackpotid=0&gname=Sweet%20Bonanza">
-                        <div class="image-overlay" style="background-image: url('https://imgur.com/RwoQnGI.jpg');">
-                            <h3>Sweet Bonanza (Pragmatic)</h3>
-                            <p>Slot penuh dengan pengganda besar!</p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Other game items go here -->
-            </div>
-        </section>
+.manga-info p {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+}
 
-        <section>
-            <h2>Cari Game Berdasarkan Provider</h2>
-            <input type="text" class="search-bar" placeholder="Cari game atau provider...">
-        </section>
+.manga-info .read-btn {
+    background-color: #ff5722;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-        <!-- Section to display IP and location info -->
-        <section class="ip-info" id="ip-info">
-            <h2>Informasi Pengunjung</h2>
-            <p>Memuat informasi...</p>
-        </section>
-    </main>
+.manga-info .read-btn:hover {
+    background-color: #e64a19;
+}
 
-    <script>
-        // Fetch IP and location data using ipinfo API
-        fetch('https://ipinfo.io/json?token=3fd54c71b8b846e')  // Ganti dengan token API yang benar
-            .then(response => response.json())
-            .then(data => {
-                // Display the IP information in the HTML
-                document.getElementById("ip-info").innerHTML = `
-                    <h2>Informasi Pengunjung</h2>
-                    <p><strong>IP Address:</strong> ${data.ip}</p>
-                    <p><strong>Kota:</strong> ${data.city}</p>
-                    <p><strong>Region:</strong> ${data.region}</p>
-                    <p><strong>Negara:</strong> ${data.country}</p>
-                    <p><strong>Lokasi Koordinat:</strong> ${data.loc}</p>
-                    <p><strong>Organisasi:</strong> ${data.org}</p>
-                    <p><strong>Zona Waktu:</strong> ${data.timezone}</p>
-                `;
-            })
-            .catch(error => console.error('Error fetching IP info:', error));
-    </script>
-</body>
+/* Latest Manga Section */
+.latest-manga {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
 
-</html>
+.latest-manga .manga-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.latest-manga .manga-card:hover {
+    transform: scale(1.05);
+}
+
+.latest-manga .manga-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.latest-manga .manga-card:hover img {
+    opacity: 0.8;
+}
+
+.latest-manga .manga-card h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.latest-manga .manga-card p {
+    color: #ccc;
+    text-align: center;
+}
+
+.latest-manga .manga-card .read-btn {
+    display: block;
+    margin: 15px auto;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+}
+
+.latest-manga .manga-card .read-btn:hover {
+    background-color: #e64a19;
+}
