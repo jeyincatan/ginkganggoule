@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mandiri888 - Situs slot terpercaya dengan RTP terbaik. Raih kemenangan besar dengan berbagai game slot favorit!">
-    <meta name="keywords" content="Mandiri888, Slot Online, RTP Slot, Game Slot, Provider Slot Terbaik">
+    <meta name="description" content="Mandiri888 - Situs slot terpercaya dengan RTP terbaik. Raih kemenangan besar dengan berbagai kategori game menarik!">
+    <meta name="keywords" content="Mandiri888, Slot Online, RTP Slot, Game Slot, Provider Slot Terbaik, Sportsbook, Casino, Poker, Lottery, Arcade">
     <meta name="author" content="Mandiri888 Team">
     <title>Mandiri888 Slot Site - Menang Besar!</title>
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5e/Emoji_1f60a.svg" type="image/svg+xml">
@@ -14,33 +14,55 @@
     <style>
         body {
             font-family: 'Poppins', Arial, sans-serif;
-            background: linear-gradient(135deg, #141e30, #243b55);
-            color: #f0f0f0;
+            background-color: #121212;
+            color: #fff;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: linear-gradient(90deg, #1f4037, #99f2c8);
+            background-color: #1b263b;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-            border-bottom: 5px solid #ffd700;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         h1 {
             margin: 0;
             font-size: 2.8em;
-            color: #243b55;
+            color: #ffd700;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: 2px solid #ffd700;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ffd700;
+            color: #1b263b;
         }
 
         .cta-button {
             background-color: #ffd700;
-            color: #1f4037;
-            padding: 15px 30px;
+            color: #0d1b2a;
+            padding: 12px 24px;
             text-decoration: none;
             border-radius: 25px;
-            font-weight: 700;
+            font-weight: 600;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -48,14 +70,14 @@
         }
 
         .cta-button:hover {
-            transform: translateY(-7px);
-            box-shadow: 0 8px 16px rgba(255, 215, 0, 0.6);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(255, 215, 0, 0.5);
         }
 
         .cta-button .icon {
-            width: 24px;
-            height: 24px;
-            margin-right: 12px;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
         }
 
         h2 {
@@ -65,22 +87,21 @@
 
         .game-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 30px;
-            padding: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
         }
 
         .game-item {
             position: relative;
             overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
         }
 
         .game-item:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            transform: translateY(-5px);
         }
 
         .game-item a {
@@ -93,71 +114,70 @@
         .image-overlay {
             background-size: cover;
             background-position: center;
-            height: 240px;
+            height: 220px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            padding: 15px;
+            padding: 10px;
             transition: opacity 0.3s ease;
         }
 
         .image-overlay h3,
         .image-overlay p {
             margin: 0;
-            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
         }
 
         .image-overlay:hover {
-            opacity: 0.85;
+            opacity: 0.9;
         }
 
         .features {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding: 30px;
-            background: #1f4037;
-            border-radius: 12px;
-            margin: 30px 0;
+            padding: 20px;
+            background: #1b263b;
+            margin: 20px 0;
+            border-radius: 10px;
         }
 
         .feature {
             flex: 1 1 300px;
-            margin: 20px;
-            padding: 20px;
-            background: #243b55;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            margin: 10px;
+            padding: 15px;
+            background: #0d1b2a;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             text-align: center;
             transition: transform 0.3s ease;
         }
 
         .feature:hover {
-            transform: translateY(-8px);
+            transform: translateY(-5px);
         }
 
         .feature h3 {
             color: #ffd700;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         footer {
-            background: #243b55;
+            background-color: #1b263b;
             text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-            color: #f0f0f0;
-            font-size: 1em;
-            border-top: 5px solid #ffd700;
+            padding: 15px;
+            margin-top: 20px;
+            color: #ddd;
+            font-size: 0.9em;
         }
 
         .search-bar {
             width: 80%;
-            max-width: 600px;
-            padding: 12px;
+            max-width: 500px;
+            padding: 10px;
             margin: 20px auto;
             display: block;
-            border: 2px solid #333;
+            border: 1px solid #333;
             border-radius: 25px;
             font-size: 1em;
             outline: none;
@@ -165,27 +185,17 @@
         }
 
         .search-bar:focus {
-            border: 2px solid #ffd700;
+            border: 1px solid #ffd700;
         }
 
         @media screen and (max-width: 768px) {
             .cta-button {
                 font-size: 0.9em;
-                padding: 12px 24px;
+                padding: 10px 20px;
             }
 
             h1 {
-                font-size: 2.2em;
-            }
-
-            .features {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .feature {
-                flex: 1 1 auto;
-                width: 90%;
+                font-size: 2em;
             }
         }
     </style>
@@ -194,21 +204,26 @@
 <body>
     <header>
         <h1>Mandiri888 Slot</h1>
-        <a href="https://mandiri888eg.com/register" class="cta-button" target="_blank">
-            <img src="https://i.imgur.com/4gsKc0U.png" alt="icon" class="icon">
-            Bermain & Menang Besar!
-        </a>
+        <nav>
+            <a href="https://mandiri888eg.com/slot" target="_blank">Slot</a>
+            <a href="https://mandiri888eg.com/livegames" target="_blank">Live Games</a>
+            <a href="https://mandiri888eg.com/casino" target="_blank">Casino</a>
+            <a href="https://mandiri888eg.com/sportsbook" target="_blank">Sportsbook</a>
+            <a href="https://mandiri888eg.com/lottery" target="_blank">Lottery</a>
+            <a href="https://mandiri888eg.com/poker" target="_blank">Poker</a>
+            <a href="https://mandiri888eg.com/arcade" target="_blank">Arcade</a>
+        </nav>
     </header>
 
     <main>
         <section>
-            <h2>Slot Games Terfavorit</h2>
-            <p>Temukan RTP Slot Terbaru dan klaim kemenangan besar! Mainkan game slot favorit dengan hadiah melimpah.</p>
+            <h2>Selamat Datang di Dunia Game Mandiri888</h2>
+            <p>Jelajahi berbagai kategori game kami dan raih kemenangan besar! Pilih kategori favorit Anda di atas atau gunakan fitur pencarian di bawah ini untuk menemukan game yang Anda suka.</p>
 
             <div class="game-grid" id="game-list">
                 <div class="game-item" data-provider="Pragmatic">
                     <a href="#">
-                        <div class="image-overlay" style="background-image: url('https://via.placeholder.com/280x160');">
+                        <div class="image-overlay" style="background-image: url('https://via.placeholder.com/250x150');">
                             <h3>Sweet Bonanza</h3>
                             <p>Pragmatic Play</p>
                         </div>
@@ -216,13 +231,18 @@
                 </div>
                 <div class="game-item" data-provider="Habanero">
                     <a href="#">
-                        <div class="image-overlay" style="background-image: url('https://via.placeholder.com/280x160');">
+                        <div class="image-overlay" style="background-image: url('https://via.placeholder.com/250x150');">
                             <h3>Hot Hot Fruit</h3>
                             <p>Habanero</p>
                         </div>
                     </a>
                 </div>
             </div>
+        </section>
+
+        <section>
+            <h2>Cari Game Berdasarkan Provider</h2>
+            <input type="text" id="search-bar" class="search-bar" placeholder="Cari game atau provider..." onkeyup="searchGames()">
         </section>
 
         <section class="features">
@@ -241,39 +261,6 @@
         </section>
 
         <section>
-            <h2>Cari Game Berdasarkan Provider</h2>
-            <input type="text" id="search-bar" class="search-bar" placeholder="Cari game atau provider..." onkeyup="searchGames()">
-        </section>
-
-        <section>
             <h2>Hubungi Kami</h2>
             <p>Telegram: <a href="https://t.me/Mandiri888">Telegram Mandiri888</a></p>
             <p>WhatsApp: <a href="https://api.whatsapp.com/send/?phone=%2B6281388617464&text">WA Mandiri888</a></p>
-            <p>Live Chat: <a href="https://secure.livechatinc.com/customer/action/open_chat?license_id=11986977">Live Chat Mandiri888</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Mandiri888 Slot Site | Raih Kemenangan Besar Sekarang!</p>
-    </footer>
-
-    <script>
-        function searchGames() {
-            var input = document.getElementById('search-bar').value.toLowerCase();
-            var gameItems = document.querySelectorAll('.game-item');
-
-            gameItems.forEach(function (item) {
-                var gameTitle = item.querySelector('h3').innerText.toLowerCase();
-                var provider = item.getAttribute('data-provider').toLowerCase();
-
-                if (gameTitle.includes(input) || provider.includes(input)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-    </script>
-</body>
-
-</html>
