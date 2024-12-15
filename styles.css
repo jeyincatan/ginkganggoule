@@ -1,184 +1,69 @@
-/* Global Reset */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
-/* Body and Background */
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
-    color: #fff;
-    overflow-x: hidden;
+header {
+    background-color: #800000; /* Merah Marun */
+    padding: 10px;
+    color: white;
 }
 
-/* Container for the entire layout */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-    border-bottom: 2px solid #fff;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-nav a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
-    font-size: 16px;
-    margin: 0 20px;
-    transition: color 0.3s ease;
+    color: white;
+    font-weight: bold;
 }
 
-nav a:hover {
-    color: #ff5722; /* Accent color on hover */
+h1 {
+    color: #800000;
+    font-size: 2.5em;
 }
 
-/* Manga Slider */
-.manga-slider {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 20px 0;
+.banner {
+    background-color: #d32f2f;
+    padding: 50px;
+    text-align: center;
+    color: white;
 }
 
-.manga-item {
-    background-color: #333;
-    border-radius: 10px;
-    width: 300px;
-    height: 450px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out;
+button {
+    background-color: #fff;
+    color: #d32f2f;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.manga-item:hover {
-    transform: scale(1.05);
+button:hover {
+    background-color: #d32f2f;
+    color: white;
 }
 
-.manga-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s ease-in-out;
+section {
+    padding: 30px;
 }
 
-.manga-item:hover img {
-    opacity: 0.8;
-}
-
-.manga-info {
+footer {
+    background-color: #800000;
+    color: white;
+    text-align: center;
+    padding: 10px;
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.manga-info h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.manga-info p {
-    font-size: 14px;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.manga-info .read-btn {
-    background-color: #ff5722;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.manga-info .read-btn:before {
-    content: "";
-    background-image: url("https://i.imgur.com/4gsKc0U.png"); /* Imgur icon URL */
-    background-size: cover;
-    width: 20px; /* Set width of the icon */
-    height: 20px; /* Set height of the icon */
-    margin-right: 10px; /* Space between icon and text */
-}
-
-.manga-info .read-btn:hover {
-    background-color: #e64a19;
-}
-
-/* Latest Manga Section */
-.latest-manga {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px 0;
-}
-
-.latest-manga .manga-card {
-    background-color: #333;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out;
-}
-
-.latest-manga .manga-card:hover {
-    transform: scale(1.05);
-}
-
-.latest-manga .manga-card img {
     width: 100%;
-    border-radius: 8px;
-    height: auto;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.latest-manga .manga-card:hover img {
-    opacity: 0.8;
-}
-
-.latest-manga .manga-card h4 {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #fff;
-    text-align: center;
-}
-
-.latest-manga .manga-card p {
-    color: #ccc;
-    text-align: center;
-}
-
-.latest-manga .manga-card .read-btn {
-    display: block;
-    margin: 15px auto;
-    background-color: #ff5722;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 14px;
-}
-
-.latest-manga .manga-card .read-btn:hover {
-    background-color: #e64a19;
+    bottom: 0;
 }
