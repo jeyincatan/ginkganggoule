@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mandiri888 - Situs slot terpercaya dengan RTP terbaik. Raih kemenangan besar dengan berbagai game slot favorit!">
+    <meta name="keywords" content="Mandiri888, Slot Online, RTP Slot, Game Slot, Provider Slot Terbaik">
+    <meta name="author" content="Mandiri888 Team">
     <title>Mandiri888 Slot Site - Menang Besar!</title>
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5e/Emoji_1f60a.svg" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -56,6 +59,7 @@
 
         h2 {
             color: #ffd700;
+            text-align: center;
         }
 
         .game-grid {
@@ -103,6 +107,36 @@
 
         .image-overlay:hover {
             opacity: 0.9;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            background: #1b263b;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .feature {
+            flex: 1 1 300px;
+            margin: 10px;
+            padding: 15px;
+            background: #0d1b2a;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature h3 {
+            color: #ffd700;
+            margin-bottom: 10px;
         }
 
         footer {
@@ -159,7 +193,37 @@
             <p>Temukan RTP Slot Terbaru dan klaim kemenangan besar! Mainkan game slot favorit dengan hadiah melimpah.</p>
 
             <div class="game-grid" id="game-list">
-                <!-- Semua elemen game-item tetap sama seperti kode asli -->
+                <div class="game-item" data-provider="Pragmatic">
+                    <a href="#">
+                        <div class="image-overlay" style="background-image: url('https://via.placeholder.com/250x150');">
+                            <h3>Sweet Bonanza</h3>
+                            <p>Pragmatic Play</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="game-item" data-provider="Habanero">
+                    <a href="#">
+                        <div class="image-overlay" style="background-image: url('https://via.placeholder.com/250x150');">
+                            <h3>Hot Hot Fruit</h3>
+                            <p>Habanero</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>100% Aman & Terpercaya</h3>
+                <p>Platform kami dilengkapi dengan enkripsi tingkat tinggi untuk keamanan Anda.</p>
+            </div>
+            <div class="feature">
+                <h3>Jackpot Melimpah</h3>
+                <p>Raih jackpot hingga ratusan juta hanya di Mandiri888.</p>
+            </div>
+            <div class="feature">
+                <h3>Pelayanan 24/7</h3>
+                <p>Tim support kami selalu siap membantu Anda kapan saja.</p>
             </div>
         </section>
 
@@ -181,6 +245,7 @@
     </footer>
 
     <script>
+        // Fitur pencarian game
         function searchGames() {
             var input = document.getElementById('search-bar').value.toLowerCase();
             var gameItems = document.querySelectorAll('.game-item');
@@ -189,7 +254,6 @@
                 var gameTitle = item.querySelector('h3').innerText.toLowerCase();
                 var provider = item.getAttribute('data-provider').toLowerCase();
 
-                // Cek apakah input pencarian cocok dengan nama game atau provider
                 if (gameTitle.includes(input) || provider.includes(input)) {
                     item.style.display = 'block';
                 } else {
