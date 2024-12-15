@@ -3,74 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Game Mandiri888 - Situs Backlink Elegan dan Profesional">
-    <meta name="author" content="Mandiri888">
-    <title>Game Mandiri888 - Backlink Elegan</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Game Mandiri888</title>
+    <style>
+        /* Reset dasar untuk memastikan konsistensi antar browser */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body umum */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header dan Navigasi */
+        header {
+            background-color: #800000; /* Maroon */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Banner */
+        .banner {
+            background-color: #800000;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Game Item */
+        .game-item {
+            display: inline-block;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 220px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .game-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .game-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Tombol CTA */
+        .cta-button {
+            display: inline-block;
+            background-color: #ffd700;
+            color: #800000;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ffcc00;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        /* Formulir Kontak */
+        form {
+            margin-top: 30px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #800000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #cc0000;
+        }
+
+        /* Responsif untuk tampilan mobile */
+        @media screen and (max-width: 768px) {
+            .game-item {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            header, .banner, footer {
+                padding: 20px 10px;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .cta-button {
+                padding: 12px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Header -->
     <header>
-        <div class="container">
-            <h1>Game Mandiri888</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#games">Games</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Selamat Datang di Game Mandiri888!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Main Content -->
-    <section id="home" class="section-banner">
-        <div class="container">
-            <div class="banner-content">
-                <h2>Selamat Datang di Game Mandiri888</h2>
-                <p>Temukan pengalaman gaming terbaik dengan situs backlink yang canggih dan elegan.</p>
-                <a href="https://mandiri888.com" class="cta-button">Kunjungi Sekarang</a>
-            </div>
-        </div>
-    </section>
+    <div class="banner">
+        <h1>Temukan Pengalaman Gaming Terbaik</h1>
+        <p>Dengan situs backlink yang canggih dan penuh fitur menarik.</p>
+        <a href="#games" class="cta-button">Kunjungi Sekarang</a>
+    </div>
 
-    <section id="games">
-        <div class="container">
-            <h2>Game Terbaru</h2>
-            <div class="game-list">
-                <!-- Example Game List -->
-                <div class="game-item">
-                    <img src="game-thumbnail.jpg" alt="Game 1">
-                    <h3>Game 1</h3>
-                    <p>Deskripsi singkat game 1.</p>
-                </div>
-                <div class="game-item">
-                    <img src="game-thumbnail.jpg" alt="Game 2">
-                    <h3>Game 2</h3>
-                    <p>Deskripsi singkat game 2.</p>
-                </div>
-                <div class="game-item">
-                    <img src="game-thumbnail.jpg" alt="Game 3">
-                    <h3>Game 3</h3>
-                    <p>Deskripsi singkat game 3.</p>
-                </div>
-            </div>
+    <section id="games" class="game-list">
+        <h2>Game Terbaru</h2>
+        <div class="game-item">
+            <img src="https://via.placeholder.com/200" alt="Game 1">
+            <h3>Game 1</h3>
+            <p>Deskripsi singkat tentang game 1.</p>
+        </div>
+        <div class="game-item">
+            <img src="https://via.placeholder.com/200" alt="Game 2">
+            <h3>Game 2</h3>
+            <p>Deskripsi singkat tentang game 2.</p>
+        </div>
+        <div class="game-item">
+            <img src="https://via.placeholder.com/200" alt="Game 3">
+            <h3>Game 3</h3>
+            <p>Deskripsi singkat tentang game 3.</p>
         </div>
     </section>
 
     <section id="about">
-        <div class="container">
-            <h2>Tentang Kami</h2>
-            <p>Mandiri888 adalah situs game terkemuka dengan berbagai pilihan game menarik dan menawarkan pengalaman bermain yang luar biasa.</p>
-        </div>
+        <h2>Tentang Kami</h2>
+        <p>Mandiri888 adalah situs game terkemuka dengan berbagai pilihan game menarik.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Hubungi Kami</h2>
+        <form>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
     </section>
 
     <footer>
         <p>&copy; 2024 Mandiri888. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Tunggu sampai seluruh halaman dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Situs Mandiri888 telah dimuat sepenuhnya!");
+
+            // Efek hover pada game item untuk interaksi visual
+            const gameItems = document.querySelectorAll('.game-item');
+            gameItems.forEach(item => {
+                item.addEventListener('mouseover', function() {
+                    item.style.transform = 'scale(1.05)';
+                    item.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+                });
+
+                item.addEventListener('mouseout', function() {
+                    item.style.transform = 'scale(1)';
+                    item.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+                });
+            });
+
+            // Menampilkan popup atau notifikasi ketika tombol CTA diklik
+            const ctaButton = document.querySelector('.cta-button');
+            if (ctaButton) {
+                ctaButton.addEventListener('click', function() {
+                    alert("Terima kasih telah mengunjungi Mandiri888! Selamat bermain!");
+                });
+            }
+
+            // Animasi fade-in untuk banner saat halaman dimuat
+            const bannerContent = document.querySelector('.banner-content');
+            if (bannerContent) {
+                bannerContent.style.opacity = 0;
+                bannerContent.style.transition = 'opacity 1s';
+                setTimeout(() => {
+                    bannerContent.style.opacity = 1;
+                }, 300);
+            }
+
+            // Smooth scrolling untuk navigasi antar bagian halaman
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1); // Ambil ID tujuan
+                    const targetElement = document.getElementById(targetId);
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50, // Sesuaikan posisi header
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Validasi form untuk memastikan input email dan pesan tidak kosong
+            const form = document.querySelector('form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    const emailField = document.querySelector('input[name="email"]');
+                    const messageField = document.querySelector('textarea[name="message"]');
+                    if (!emailField.value || !messageField.value) {
+                        e.preventDefault();
+                        alert('Silakan isi semua kolom sebelum mengirim pesan!');
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
