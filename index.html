@@ -118,41 +118,6 @@
             margin-top: 50px;
         }
 
-        /* Formulir Kontak */
-        form {
-            margin-top: 30px;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        form button {
-            background-color: #800000;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        form button:hover {
-            background-color: #cc0000;
-        }
-
         /* Responsif untuk tampilan mobile */
         @media screen and (max-width: 768px) {
             .game-item {
@@ -197,19 +162,25 @@
     <section id="games" class="game-list">
         <h2>Game Terbaru</h2>
         <div class="game-item">
-            <img src="https://via.placeholder.com/200" alt="Game 1">
-            <h3>Game 1</h3>
-            <p>Deskripsi singkat tentang game 1.</p>
+            <a href="https://mandiri888eg.com/game1" target="_blank">
+                <img src="https://via.placeholder.com/200" alt="Game 1">
+                <h3>Game 1</h3>
+                <p>Deskripsi singkat tentang game 1.</p>
+            </a>
         </div>
         <div class="game-item">
-            <img src="https://via.placeholder.com/200" alt="Game 2">
-            <h3>Game 2</h3>
-            <p>Deskripsi singkat tentang game 2.</p>
+            <a href="https://mandiri888eg.com/game2" target="_blank">
+                <img src="https://via.placeholder.com/200" alt="Game 2">
+                <h3>Game 2</h3>
+                <p>Deskripsi singkat tentang game 2.</p>
+            </a>
         </div>
         <div class="game-item">
-            <img src="https://via.placeholder.com/200" alt="Game 3">
-            <h3>Game 3</h3>
-            <p>Deskripsi singkat tentang game 3.</p>
+            <a href="https://mandiri888eg.com/game3" target="_blank">
+                <img src="https://via.placeholder.com/200" alt="Game 3">
+                <h3>Game 3</h3>
+                <p>Deskripsi singkat tentang game 3.</p>
+            </a>
         </div>
     </section>
 
@@ -230,71 +201,5 @@
     <footer>
         <p>&copy; 2024 Mandiri888. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        // Tunggu sampai seluruh halaman dimuat
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log("Situs Mandiri888 telah dimuat sepenuhnya!");
-
-            // Efek hover pada game item untuk interaksi visual
-            const gameItems = document.querySelectorAll('.game-item');
-            gameItems.forEach(item => {
-                item.addEventListener('mouseover', function() {
-                    item.style.transform = 'scale(1.05)';
-                    item.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
-                });
-
-                item.addEventListener('mouseout', function() {
-                    item.style.transform = 'scale(1)';
-                    item.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
-                });
-            });
-
-            // Menampilkan popup atau notifikasi ketika tombol CTA diklik
-            const ctaButton = document.querySelector('.cta-button');
-            if (ctaButton) {
-                ctaButton.addEventListener('click', function() {
-                    alert("Terima kasih telah mengunjungi Mandiri888! Selamat bermain!");
-                });
-            }
-
-            // Animasi fade-in untuk banner saat halaman dimuat
-            const bannerContent = document.querySelector('.banner-content');
-            if (bannerContent) {
-                bannerContent.style.opacity = 0;
-                bannerContent.style.transition = 'opacity 1s';
-                setTimeout(() => {
-                    bannerContent.style.opacity = 1;
-                }, 300);
-            }
-
-            // Smooth scrolling untuk navigasi antar bagian halaman
-            const navLinks = document.querySelectorAll('nav ul li a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = link.getAttribute('href').substring(1); // Ambil ID tujuan
-                    const targetElement = document.getElementById(targetId);
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 50, // Sesuaikan posisi header
-                        behavior: 'smooth'
-                    });
-                });
-            });
-
-            // Validasi form untuk memastikan input email dan pesan tidak kosong
-            const form = document.querySelector('form');
-            if (form) {
-                form.addEventListener('submit', function(e) {
-                    const emailField = document.querySelector('input[name="email"]');
-                    const messageField = document.querySelector('textarea[name="message"]');
-                    if (!emailField.value || !messageField.value) {
-                        e.preventDefault();
-                        alert('Silakan isi semua kolom sebelum mengirim pesan!');
-                    }
-                });
-            }
-        });
-    </script>
 </body>
 </html>
